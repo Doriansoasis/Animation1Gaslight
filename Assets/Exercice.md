@@ -36,6 +36,9 @@ versus la matrice non modifiée (environ)
 
 Faites le même exercice que précédemment, mais à l'aide de la matrice *OrthoMatrix*.
 
+-Il se passe exactement la même chose, dans le sens ou le fait de garder les mêmes informations dans une fenêtre plus petite fait en sorte que l'image semble écrasée dans l'axe des x (plus mince)
+
+-Encore une fois, la solution est de modifier le premier paramètre de la matrice orthogonale pour étirer l'image horizontalement, ce qui a encore l'effet de masquer une partie de l'image qui se retrouve hors champ, ce coup ci avec une maison au complet qui disparait du champ de vision
 
 
 ## 3

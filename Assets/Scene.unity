@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a5b6b455d594e90a0d0d19606a40fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectionMatrix: {fileID: 11400000, guid: 2b82440eca171ba4594de862b146873c, type: 2}
+  projectionMatrix: {fileID: 11400000, guid: 6f4def6a63d8d024486c60ee7357b5c1, type: 2}
 --- !u!1001 &272341008
 PrefabInstance:
   m_ObjectHideFlags: 0
