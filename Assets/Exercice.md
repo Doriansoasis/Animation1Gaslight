@@ -45,9 +45,15 @@ Faites le même exercice que précédemment, mais à l'aide de la matrice *Ortho
 
 En conservant un ratio 16:9, dupliquez et modifiez la matrice *OrthoMatrix* en modifiant les deux valeurs supérieures de la dernière colonne (demeurez dans la plage ±1). Que constatez-vous? Qu'arrive-t-il si vous modifiez la troisième valeur de cette colonne? Qu'en est-il de la dernière valeur?
 
+-Les deux valeurs supérieures ajoutent une translation en x ou en y à la scène (ou plutôt à la caméra), en opposition aux valeurs placés dans les autres colonnes, qui changent les proportions de ce qui est vu à l'écran.
+-Par déduction, on peut supposer que changer la troisème valeur est supposée appliquer une translation en z à ce qui est vu, mais la projection orthogonale fait en sorte fait en sorte qu'on ne peut deviner ces changements de distance en voyant la taille des objets varier, comme le ferait une vue en perspective. En jouant très précisément avec les valeurs (entre 0.98, 0.97, 0.96) on peut toutefois faire disparaitre certains éléments du champ de vision laissant supposer que les éléments se retrouvent alors derrière la caméra, ou trop loin pour être visibles.
+-Le quatrième paramètre de la colonne semble faire bouger la scène dans l'axe des z, choses qui semble contraire à ce que nous remarquions lors du dernier commentaire. Toutefois, comme dans notre hypothèse, la projection orthogonale ne devrait pas affecter la taille des objets dépendamment de leur distance, on peut supposer que ce paramètre affecte le ''zoom'' de la caméra, agrandissant ou rapetissant l'image dans son entièreté de manière physique plutôt que par la perspective
+
 ## 4
 
 Dupliquez et modifiez la matrice *OrthoMatrix*, appliquez  les valeurs "-0.2" et "-0.8" aux deux valeurs supérieures de la dernière colonne, et ajoutez les valeurs "-0.01" et "-0.0178" aux deux valeurs supérieures de la troisième colonne. Que constatez-vous?
+
+-Du point de vue de la caméra, on dirait qu'elle aurait été placée en angle au dessus à droite de la scène. On peut donc voir le côté des objets, ainsi que le sol, chose qu'on ne pouvait pas faire avant. On peut toujours dire que la vision est orthogonale, parce que les proportions restent pareilles peu importe la distance à la caméra, comme on peut le voir avec les colonnes soutenant le bâtiment principal, qui sont de la même taille à l'avant et à l'arriére. On peut poser l'hypothèse la modification de ces paramètres agit comme une rotation de la scène.
 
 ## 5
 

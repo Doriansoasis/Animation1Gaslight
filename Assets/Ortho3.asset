@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0c712170363c43709b624b0077aa916, type: 3}
-  m_Name: OrthoModif
+  m_Name: Ortho3
   m_EditorClassIdentifier: 
   matrix:
-    e00: 0.07
+    e00: 0.05625
     e01: 0
-    e02: 0.01
-    e03: -0.2
+    e02: 0
+    e03: 0
     e10: 0
     e11: 0.1
-    e12: -0.0178
-    e13: -0.8
+    e12: 0
+    e13: 0
     e20: 0
     e21: 0
     e22: -0.0020006
-    e23: 0.7
+    e23: -1.0006001
     e30: 0
     e31: 0
     e32: 0
-    e33: 0.8
+    e33: 1
