@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a5b6b455d594e90a0d0d19606a40fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectionMatrix: {fileID: 11400000, guid: 6f4def6a63d8d024486c60ee7357b5c1, type: 2}
+  projectionMatrix: {fileID: 11400000, guid: 669381317efd04e9faa49e7db57c68a2, type: 2}
 --- !u!1001 &272341008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1684,6 +1684,7 @@ GameObject:
   - component: {fileID: 2071850513}
   - component: {fileID: 2071850514}
   - component: {fileID: 2071850515}
+  - component: {fileID: 2071850516}
   m_Layer: 0
   m_Name: Camera (1)
   m_TagString: MainCamera
@@ -1756,10 +1757,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071850512}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efec6e67fce831c45b94ba88edca7c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2071850514}
-  tranform: {fileID: 0}
+  tranform: {fileID: 2071850513}
+--- !u!114 &2071850516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071850512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cafa9ae824a7544b8adeea8dc0764ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2071850514}
+  tranform: {fileID: 2071850513}

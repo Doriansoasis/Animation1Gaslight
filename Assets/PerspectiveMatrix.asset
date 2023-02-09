@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: PerspectiveMatrix
   m_EditorClassIdentifier: 
   matrix:
-    e00: 0.97469866
+    e00: 1
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 1.7320508
+    e11: 1.7
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: -1.0006001
-    e23: -0.60018003
+    e22: -1
+    e23: -0.6
     e30: 0
     e31: 0
     e32: -1
